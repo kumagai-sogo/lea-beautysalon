@@ -1,0 +1,60 @@
+/* footer */
+footer {
+    background: url(../images/footer_bg.png) center / cover no-repeat;
+    padding: calc(56 / var(--view-size) * 100vw) 0;
+    @include tab {
+        padding: calc(40 / var(--view-size) * 100vw) 0 calc(80 / var(--view-size) * 100vw) 0;
+    }
+    .inner {
+        width: calc(1120 / var(--view-size) * 100vw);
+        @include tab {
+            width: calc(335 / var(--view-size) * 100vw);
+        }
+    }
+    .footer_text {
+        margin-bottom: calc(32 / var(--view-size) * 100vw);
+        text-align: center;
+        @include tab {
+            font-size: calc(14 / var(--view-size) * 100vw);
+            margin-bottom: calc(24 / var(--view-size) * 100vw);
+        }
+    }
+    .footer_btns {
+        margin-bottom: calc(32 / var(--view-size) * 100vw);
+        @include tab {
+            margin-bottom: calc(24 / var(--view-size) * 100vw);
+        }
+        .common_btn {
+            width: calc(320 / var(--view-size) * 100vw);
+            margin-right: calc(80 / var(--view-size) * 100vw);
+            @include tab {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: calc(16 / var(--view-size) * 100vw);
+            }
+            &:last-child {
+                margin-right: 0;
+                @include tab {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .footer_campain {
+        text-align: center;
+        .footer_campain_ttl {
+            font-size: calc(20 / var(--view-size) * 100vw);
+            color: $pink_01;
+            margin-bottom: calc(10 / var(--view-size) * 100vw);
+            @include tab {
+                font-size: calc(16 / var(--view-size) * 100vw);
+            }
+        }
+        .footer_campain_text {
+            font-size: calc(12 / var(--view-size) * 100vw);
+            @include tab {
+                font-size: calc(10 / var(--view-size) * 100vw);
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+
+//   -------------------------------------------------------
+//   -------------------------------------------------------
+//   -------------------------------------------------------
+.fadein {
+    opacity: 0;
+    transform: translateY(3%);
+    &.active {
+        animation:.8s forwards fadein;
+    }
+}
+.fadein2 {
+    opacity: 0;
+    transform: translateY(3%);
+    &.active {
+        animation:.8s forwards .1s fadein;
+    }
+}
+.leftin {
+    transform: translateX(-100%);
+    overflow: hidden;
+    &.active {
+    animation:.5s forwards leftin;
+    }
+}
+.rightin {
+    transform: translateX(100%);
+    overflow: hidden;
+    &.active {
+    animation:.5s forwards rightin;
+    }
+}
+
+// 共通アニメーション
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(3%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+@keyframes leftin {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+  }
+@keyframes rightin {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+  }

@@ -1,0 +1,21 @@
+/* カラー */
+$pink_01: #EA7E75;
+$pink_02: #FBDBD8;
+
+$gold_01: #E5AA51;
+$gold_02: #F3D5A7;
+
+$green_01: #3BA896;
+
+$gray_01: #898989;
+
+$blue_01: #38ADE4;
+
+/* レスポンシブ */
+$tab: 768px;
+
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
